@@ -1,0 +1,7 @@
+create angular project                  # ng new pro_name
+to run application	                # ng serve
+insall the ngrxstore                    #npm install @ngrx/store    note---we can check in package.json to add the libarary =>"@ngrx/store": "^13.2.0",
+
+ts.config.json	=> to change true to 	# "strict": false,
+
+app.module.ts   to import the       	# StoreModule.forRoot({todo: TodoReducer})

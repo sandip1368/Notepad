@@ -1,0 +1,48 @@
+check either install or not
+Node js      node -v
+npm 	     npm -v
+
+install Angular                ng i -g @angular/cli
+check Angular version          ng version
+----------------------------------------------------------------------
+Through CMD
+create folder 
+open inside the cmd create progect by below command 
+create the angular project                             ng new project name   
+change dirctory >                                      cd project name ntr
+>open the tool >                                       code .
+download the bootstrap				       npm i bootstrap
+start the server>                                      ng serve
+-__________________________________________________________________________________
+json - srver 
+
+in project open cmd >				        npm i -g json-server
+							npx json-server --watch db.json
+	hit coommamd						json-server --watch db.json --port 3000
+Angular project      					https://github.com/IIHT-Spring/angular-springboot-jwt.git
+-----------------------------------------------------------------------
+https://www.c-sharpcorner.com/article/how-to-fix-ps1-can-not-be-loaded-because-running-scripts-is-disabled-on-this-sys/
+in vs code commond are not run than use below command/link
+1>set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+2>Get-ExecutionPolicy
+3>Get-ExecutionPolicy -list 
+4> ng --version
+
+5> ng serve
+_________________________________________________________________________________________
+spring secuirity sql commonds
+INSERT INTO roles(name) VALUES('ROLE_USER');
+
+INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+_________________________________________________________________________________
+Angular Commonds 
+ng help
+generate component                ng generate component login   ng g c component name
+generate model                    ng g m model name
+generte compoene inside model     ng g c model_name/component_name
+generate class/interface          ng g class/interface name
+build     create dist file        ng build
+
+

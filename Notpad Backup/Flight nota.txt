@@ -1,0 +1,18 @@
+Flight booking
+AngularFlightBooking       Angular11JwtAuth
+
+Admin  port no 8082
+user  port no  8081
+
+Admin json 
+
+{
+"username":"admin",
+"email":"admin@gmail.com",
+"role":["admin"],
+"password":"admin123"
+}
+
+Mysql Query
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');

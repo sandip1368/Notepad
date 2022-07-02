@@ -1,0 +1,22 @@
+Admin url
+https://adminbucketjar.s3.us-west-2.amazonaws.com/Admin-Service.jar
+
+
+
+
+User url
+https://adminbucketjar.s3.us-west-2.amazonaws.com/User-Serivce.jar
+
+ec2 host url
+ec2-34-211-143-32.us-west-2.compute.amazonaws.com
+ 
+
+puTTy
+Angular Url
+http://angularflight.s3-website-us-west-2.amazonaws.com
+
+
+
+EC2 DNS url
+ec2-34-211-143-32.us-west-2.compute.amazonaws.com
+instance Name-  ec2_user

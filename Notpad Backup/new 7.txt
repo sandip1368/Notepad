@@ -1,0 +1,38 @@
+
+
+  downloadPdf(pnrNumber)   {
+  const observable=this.userService.searchByPnr(pnrNumber);
+
+     observable.subscribe(
+
+      (response :any) =>{
+        console.log(response);
+
+
+
+ this.bookTicket=response as BookingTicket;
+ const promise= this.userService.getFlightByFlighNo(this.bookTicket.flightNo);
+ promise.subscribe((response)=> {
+   this.flight=response as Flight;
+   console.log("------"+this.flight.fromPlace)
+   if(this.flight!=null){
+     this.hideContent=true;
+     setTimeout(() =>{
+       this.callDownloadPdf(pnrNumber);
+       this.hideContent=false;
+     },10)
+   }
+ }
+ )
+      }
+     );
+   }
+ 
+ callDownloadPdf(pnrNumber){
+     let pdf = new jsPDF('p','pt','a4');
+             pdf.html(this.content.nativeElement,{
+               callback: (pdf) => {
+                 pdf.save(pnrNumber+".pdf");
+               }
+             });
+   }

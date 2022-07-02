@@ -1,0 +1,13 @@
+-- server
+eureka.client.serviceUrl.defaultZone = http://ec2-18-237-54-103.us-west-2.compute.amazonaws.com:8761/eureka
+eureka.instance.prefer-ip-address=true
+
+-- client
+
+eureka.client.enabled=true
+spring.application.name=user-service
+eureka.instance.hostname=ec2-18-237-54-103.us-west-2.compute.amazonaws.com
+eureka.client.service-url.defaultZone = http://ec2-18-237-54-103.us-west-2.compute.amazonaws.com:8761/eureka
+
+
+ec2-34-211-143-32.us-west-2.compute.amazonaws.com

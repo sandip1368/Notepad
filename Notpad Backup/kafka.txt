@@ -1,0 +1,11 @@
+ first created zookeeper server new cmd from software>config>windows>
+okeeper-server-start.bat D:\kafka\kafka_2.13-3.1.0\config\zookeeper.properties
+
+new open cmd from windows and create server by using this command.
+kafka-server-start.bat D:\kafka\kafka_2.13-3.1.0\config\server.properties
+
+new open cmd from windows and create topics using this commond.
+kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+
+new open cmd from windows and check output runing or not using this commond.
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic spring-kafka

@@ -1,0 +1,22 @@
+create project Lazy loading 
+ ng new lazyloading
+create admin modues copmanyts ng g m admin
+		       ng g m admin --routing
+		       ng g c admin/login
+		       ng g m admin/list 
+
+after that in adminrouting.ts mention path =>const routes: Routes 
+
+after that  also give path in app.roting  => const routes: Routes = [
+  {
+    path:'admin', loadChildren:() => import('./admin/admin.module').then(mod =>mod.AdminModule)
+  }
+];
+
+in app.components.html show in page =><h1>Lazy loading in Angular</h1>
+<h2>Admin Links </h2>
+<ul>
+    <li><a routerLink="admin/login">login</a></li>
+    <li><a routerLink="admin/list">List</a></li>
+</ul>
+<router-outlet></router-outlet>
